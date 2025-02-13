@@ -35,7 +35,7 @@
 1. Allows UDFs (User defined functions)
 2. Allows for stored procedures to be written in Python or supported language
 3. Supports pre-vetted open source packages through Anaconda (Allows for developers not to worry about dependencies)
-4. Provides access to external data sources like AWS S3, Azure Blob Storage, Google Cloud Storage
+4. Provides access to external data sources like AWS S3, Azure Blob Storage, Google Cloud Storage (external stage)
 5. Supports distributed processing for scalability
 6. Handle real-time and batch data processing
 7. Data centralization (keep the data in Snowflake. Store data and process data in Snowflake)
