@@ -8,10 +8,12 @@
 
 ```python
 from snowflake.snowpark.session import Session
-from snowflake.snowpark.types import FloatType, 
-                                    StringType, 
-                                    IntegerType, 
-                                    ArrayType
+from snowflake.snowpark.types import (
+                        FloatType, 
+                        StringType, 
+                        IntegerType,
+                        ArrayType
+)
 
 session_params = {
   "account": "<your_account>",
