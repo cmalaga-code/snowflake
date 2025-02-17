@@ -80,7 +80,8 @@ session.udf.register(
 )
 
 session.sql("SELECT SQUARE_FUNCTION(AMOUNT) AS RESULT FROM POST;")
-	
+
+session.close()
 ```
 ```python
 df.with_column("RESULT", call_udf("SQUARE_FUNCTION", col("AMOUNT"))).show()
@@ -109,7 +110,8 @@ df.with_column("RESULT", call_udf("SQUARE_FUNCTION", col("AMOUNT"))).show()
 	 replace=True,
 	 stage_location='@stage-name'
 	 
- )
+)
+session.close()
 ```
 ### Vectorized UDFs
 - Pandas DataFrame UDFs
@@ -135,4 +137,5 @@ def add_number(col: pd.Series, number) -> pd.Series:
 session = Session.builder.configs('local_testing').create()
 df = session.table("POST")
 df.with_column('NEW_UPVOTE', add_number(col('"upvote"'))).show() 
+session.close()
 ```

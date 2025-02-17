@@ -56,6 +56,8 @@ df = df.with_column("age_plus_one", col("age") + 1)
 
 result = df.filter(df.NAME == "Alice")
 result.show()
+
+session.close()
 ```
 ### Steps (venv native to python)
 1. Create a virtual env using venv
@@ -95,4 +97,6 @@ df = df.with_column("age_plus_one", col("age") + 1)
 
 result = df.filter(df.NAME == "Alice")
 result.show()
+
+session.close()
 ```
