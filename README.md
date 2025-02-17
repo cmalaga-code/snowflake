@@ -39,3 +39,7 @@
 5. Supports distributed processing for scalability
 6. Handle real-time and batch data processing
 7. Data centralization (keep the data in Snowflake. Store data and process data in Snowflake)
+
+## Snowpark Load Data Into Internal Stage
+
+- ./snowpark/load_data/
